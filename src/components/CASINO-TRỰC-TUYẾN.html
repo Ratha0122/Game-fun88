@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwindcss... -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <!-- tailwindcss... -->
+    <link href="../output.css" rel="stylesheet">
+
+
+    <!-- bootstrap...! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap...! -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- font awesome...! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- images icon -->
+
+
+
+    <!--- carousel script-->
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.0/dist/alpine.min.js" defer></script>
+
+    <title>188DONG.At - Trang chủ chính thức nhà cái HL8 Việt</title>
+
+
+
+</head>
+
+<body>
+
+    <!--sign-->
+
+    <header id="navbar" class=" header bg-white">
+        <div class="bg-cyan-500">
+            <div class="container ">
+                <div class="block justify-between md:flex">
+                    <a href="./index.html" class="flex justify-center items-center">
+                        <img src="../images//logo.png" alt="" class="max-w-[160px]">
+                    </a>
+                    <ul
+                        class="flex justify-center items-center p-4 *:cursor-pointer *:font-medium *:px-5 *:py-1 *:m-2 *:rounded-lg">
+                        <li class="bg-amber-500 hover:shadow-md"><a href=" https://www.hay88.one/?" class="">ĐĂNG
+                                NHẬP</a></li>
+                        <li class="bg-red-600 "><a href=" https://www.hay88.one/?"
+                                class="text-white hover:text-black">ĐĂNG KÝ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigation screen -->
+        <nav class="bg-blue-900 hidden md:block items-centerw-full py-2">
+            <div class="container "></div>
+            <ul class="flex justify-center flex-wrap p-4 *:font-medium *:px-4 *:py-2 *:text-white *:cursor-pointer">
+                <li class=""><a href="./index.html"
+                        class="hover:text-amber-400 hover:no-underline active:text-amber-400">188DONG</a></li>
+
+                <li class=""><a href="./CASINO-TRỰC-TUYẾN.html" class="hover:text-amber-400 hover:no-underline">CASINO
+                        TRỰC TUYẾN</a></li>
+                <li class=""><a href="./CÁ CƯỢC-BÓNG-ĐÁ.html" class="hover:text-amber-400 hover:no-underline">CÁ CƯỢC
+                        BÓNG ĐÁ</a></li>
+                <li class=""><a href="./NỔ-HŨ-ĐỔI-THƯỞNG.html" class="hover:text-amber-400 hover:no-underline">NỔ HŨ ĐỔI
+                        THƯỞNG</a></li>
+                <li class=""><a href="./LÔ-ĐỀ-ONLINE.html" class="hover:text-amber-400 hover:no-underline">LÔ ĐỀ
+                        ONLINE</a></li>
+                <li class=""><a href="./GAME-BẮN-CÁ.html" class="hover:text-amber-400 hover:no-underline">GAME BẮN
+                        CÁ</a></li>
+                <li class=""><a href="./THỂ-THAO-ĐIỆN-TỬ.html" class="hover:text-amber-400 hover:no-underline">THỂ THAO
+                        ĐIỆN TỬ</a></li>
+            </ul>
+        </nav>
+
+
+        <!--menu-->
+
+        <div class="bg-blue-950 md:hidden">
+            <div class="container">
+                <!-- button container -->
+                <div class="relative py-2 justify-center flex items-center">
+                    <nav x-data="{ open: false }" class="w-full">
+                        <div class="flex justify-center">
+                            <button class="text-gray-100 w-10 h-10 relative focus:outline-none" @click="open = !open">
+                                <div class="menu-icon block w-5 absolute ">
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'rotate-45': open, '-translate-y-1.5': !open }"></span>
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'opacity-0': open } "></span>
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'-rotate-45': open, 'translate-y-1.5': !open}"></span>
+                                </div>
+                            </button>
+                            <span class="text-white uppercase mt-2 items-center justify-center">menu</span>
+                        </div>
+                        <!-- List container -->
+                        <ul x-show="open" class=" text-white mt-2 *:py-2 space-y-2  *:font-medium">
+                            <li class=""><a href="./index.html"
+                                    class="hover:text-amber-400 hover:no-underline active:text-amber-400">188DONG</a>
+                            </li>
+
+                            <li class=""><a href="./CASINO-TRỰC-TUYẾN.html"
+                                    class="hover:text-amber-400 hover:no-underline">CASINO TRỰC TUYẾN</a></li>
+                            <li class=""><a href="./CÁ CƯỢC-BÓNG-ĐÁ.html"
+                                    class="hover:text-amber-400 hover:no-underline">CÁ CƯỢC BÓNG ĐÁ</a></li>
+                            <li class=""><a href="./NỔ-HŨ-ĐỔI-THƯỞNG.html"
+                                    class="hover:text-amber-400 hover:no-underline">NỔ HŨ ĐỔI THƯỞNG</a></li>
+                            <li class=""><a href="./LÔ-ĐỀ-ONLINE.html"
+                                    class="hover:text-amber-400 hover:no-underline">LÔ ĐỀ ONLINE</a></li>
+                            <li class=""><a href="./GAME-BẮN-CÁ.html"
+                                    class="hover:text-amber-400 hover:no-underline">GAME BẮN CÁ</a></li>
+                            <li class=""><a href="./THỂ-THAO-ĐIỆN-TỬ.html"
+                                    class="hover:text-amber-400 hover:no-underline">THỂ THAO ĐIỆN TỬ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- End button container -->
+
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <section class="bg-blue-800">
+        <div class=" rounded-lg relative w-full flex justify-center">
+                <img class="w-full h-[500px] md:h-[600px]"
+                    src="https://hl8.ink/wp-content/uploads/2022/11/casino-hl8-bg.webp" alt="Flower and sky" />
+                <div class="absolute left-0 top-0">
+                    <div class="justify-center flex items-center">
+                        <div class="flex items-center justify-center p-2">
+                            <h4 class="hover:text-red-700 font-semibold text-white tracking-tight text-3xl w-[400px]">
+                                CASINO
+                                TRỰC TUYẾN HL8 VIỆT NAM - ĐỊA CHỈ UY TÍN HÀNG ĐẦU HIỆN NAY</h4>
+                        </div>
+                        <img src="../images/casino-girl-icon.webp" alt="" class="w-[400px]">
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+    <section class="bg-blue-950 p-2">
+        <div class="container">  
+            <div class="text-white *:mt-10">
+                <p><span class="text-amber-600">Casino trực tuyến HL8 </span>là sản phẩm thế mạnh nổi bật nhất và được nhiều thành viên tham gia lựa chọn. Với cơ chế bảo mật cao, hệ thống hiện đại đến từ 5 sảnh casino nổi tiếng trên thế giới. HL8 chắc chắn là thương hiệu sòng bài online hàng đầu mà bạn không thể nào bỏ qua.</p>
+                <h1 class="text-3xl text-center font-medium text-amber-500">5 Sảnh Casino Trực Tuyến Tốt Nhất Tại HL8</h1>
+            </div>
+
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6  items-center mt-10">
+                <div class="text-white">
+                    <a href="../components/CASINO-TRỰC-TUYẾN.html" class="*:mt-4 hover:text-amber-500">
+                        <img src="../images/ae-baccarat-casino.webp" alt="">
+                        <p>AE Sexy Baccarat – sảnh casino trực tuyến được nhiều người chơi tham gia nhất tại HL8. Sòng bài với những dealer xinh tươi siêu hấp dẫn, hệ thống ổn định, tiền thưởng cao, nhiều bàn chơi bài đẳng cấp.</p>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="../components/CÁ CƯỢC-BÓNG-ĐÁ.html" class="*:mt-4 hover:text-amber-500">
+                        <img src="../images/gameplay-casino-hl8.webp" alt="">
+                        <p>GamePlay Interactive – sảnh casino hiện đại với nhiều trò chơi mới lạ, đặc biệt cơ chế cược bảo hiểm, hoàn trả cực tốt. Đây là một trong những sòng bài trực tuyến tốt, có nhiều thể loại cho người chơi lựa chọn.</p>
+                    </a>
+                </div>
+               
+            </div>         
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6  items-center mt-10">
+                <div class="text-white">
+                    <a href="../components/CASINO-TRỰC-TUYẾN.html" class="*:mt-4 hover:text-amber-500">
+                        <img src="../images/pragmatic-play-casino.webp" alt="">
+                        <p>Pragmatic Play là sảnh cung cấp nền tảng casino thế hệ mới, giao diện đẹp mắt, nhiều tính năng hỗ trợ. Mô phỏng thực tế nhất như sòng bài ngoài đời thực. Với sự đầu tư mạnh, sảnh PP mang tính ổn định nhất, đường truyền tốt và hình ảnh rõ nét, giúp thao tác cược dễ dàng.</p>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="../components/CÁ CƯỢC-BÓNG-ĐÁ.html" class="*:mt-4 hover:text-amber-500">
+                        <img src="../images/sa-gaming-casino.webp" alt="">
+                        <p>Sảnh SA Gaming hỗ trợ nhiều kiểu đặt cược với nhiều thể loại trò chơi mới lạ. Bạn có thể trải nghiệm đặt cược khác ngoài casino như chiếc nón kì diệu, vòng quay may mắn, tài xỉu, gameshow v.v… Tại đây còn có nhiều chương trình dự đoán trúng thưởng rất hay từ Thái Lan.</p>
+                    </a>
+                </div>
+                <div class="text-white">
+                    <a href="../components/NỔ-HŨ-ĐỔI-THƯỞNG.html" class="*:mt-4 hover:text-amber-500">
+                        <img src="../images/sa-gaming-casino.webp" alt="">
+                        <p>EG là sảnh casino trực tuyến dành cho những người chơi yêu thích phong cách hiện đại, sòng châu Âu. Những cô gái xinh đẹp chuyên nghiệp phục vụ sẽ không làm bạn thấy vọng. Bên cạnh đó, tỷ lệ trả thưởng tại sòng EG cũng cực kỳ cao, sự kiện tiền thưởng diễn ra liên tục.</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- body text -->
+
+
+
+    <footer class="bg-slate-800 p-2">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-white p-2">
+            <div class="*:p-2  border-r-2 border-dotted border-gray-400">
+                <img src="" alt="">
+                <p>HL8 Việt Nam xin trân trọng cảm ơn sự đồng hành của quý khách! Tại trang chủ đăng ký và đăng nhập
+                    HL8, quý khách có thể sử dụng link mới nhất, đảm bảo an toàn tài khoản. Bên cạnh đó, đội ngũ chuyên
+                    viên luôn sẵn sàng hỗ trợ qua kênh chat trực tuyến tại đây.</p>
+            </div>
+            <div class="*:p-2  border-r-2 border-dotted border-gray-400 text-white">
+                <h1 class="text-center font-medium text-amber-500">TRANG THÔNG TIN</h1>
+                <div class="flex flex-col *:mt-2">
+                    <a href="" class="hover:text-amber-500 hover:underline">Giới Thiệu</a>
+                    <a href="" class="hover:text-amber-500 hover:underline">Liên Hệ</a>
+                    <a href="" class="hover:text-amber-500 hover:underline">Điều Khoản Sử Dụng</a>
+                    <a href="" class="hover:text-amber-500 hover:underline">Chính Sách Bảo Mật</a>
+                    <a href="" class="hover:text-amber-500 hover:underline">Đại Lý</a>
+                    <a href="" class="hover:text-amber-500 hover:underline">Hướng Dẫn</a>
+                    <a href="" class="hover:text-amber-500 hover:underline">Sự Kiện HL8</a>
+                </div>
+            </div>
+            <div class="*:p-2  border-r-2 border-dotted border-gray-400 text-white">
+                <h1 class="text-center font-medium text-amber-500">TRANG HƯỚNG DẪN</h1>
+                <div class="flex flex-col *:mt-2">
+                    <a href="" class="hover:text-amber-500 hover:underline">Hướng Dẫn Nạp Tiền Tài Khoản HL8</a>
+                    <a href="" class="hover:text-amber-500 hover:underline">Hướng Dẫn Cách Rút Tiền Từ HL8</a>
+                    <a href="" class="hover:text-amber-500 hover:underline">Hướng Dẫn Đăng Ký Tài Khoản Nhà Cái</a>
+                    <img src="../images/dmca_protected_sml_120l.png" alt="" class="w-24 mt-4">
+                </div>
+            </div>
+            <div class="*:p-2  border-r-2 border-dotted border-gray-400 text-white">
+                <h1 class="text-center font-medium text-amber-500">NHÀ CUNG CẤP</h1>
+                <div class="flex flex-col *:mt-2">
+                    <img src="../images/footer-provider.webp" alt="">
+                </div>
+                <p>Đơn vị tiền tệ được chấp nhận</p>
+                <img src="../images/currency.webp" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
