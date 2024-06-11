@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwindcss... -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <!-- tailwindcss... -->
+    <link href="../output.css" rel="stylesheet">
+
+
+    <!-- bootstrap...! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap...! -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- font awesome...! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- images icon -->
+    <link rel="shortcut icon" href="../images/photo_2024-06-11_12-00-54.png" type="image/x-icon">
+
+
+    <!--- carousel script-->
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.0/dist/alpine.min.js" defer></script>
+
+    <title>188DONG.At - Trang chủ chính thức nhà cái HL8 Việt</title>
+
+
+
+</head>
+
+<body>
+
+    <!--sign-->
+
+    <header id="navbar" class=" header bg-white">
+        <div class="bg-cyan-500">
+            <div class="container ">
+                <div class="block justify-between md:flex">
+                    <a href="./index.html" class="flex justify-center items-center p-2">
+                        <img src="../images/photo_2024-06-11_12-00-54.png" alt="" class="max-w-[80px]">
+                    </a>
+                    <ul
+                        class="flex justify-center items-center p-4 *:cursor-pointer *:font-medium *:px-5 *:py-1 *:m-2 *:rounded-lg">
+                        <li class="bg-amber-500 hover:shadow-md"><a href=" https://www.hay88.one/?" class="">ĐĂNG
+                                NHẬP</a></li>
+                        <li class="bg-red-600 "><a href=" https://www.hay88.one/?"
+                                class="text-white hover:text-black">ĐĂNG KÝ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigation screen -->
+        <nav class="bg-blue-900 hidden md:block items-centerw-full py-2">
+            <div class="container "></div>
+            <ul class="flex justify-center flex-wrap p-4 *:font-medium *:px-4 *:py-2 *:text-white *:cursor-pointer">
+                <li class=""><a href="../components/index.html"
+                        class="hover:text-amber-400 hover:no-underline active:text-amber-400">188DONG</a></li>
+
+                <li class=""><a href="../components/CASINO-TRỰC-TUYẾN.html"
+                        class="hover:text-amber-400 hover:no-underline">CASINO
+                        TRỰC TUYẾN</a></li>
+                <li class=""><a href="../components/CÁ CƯỢC-BÓNG-ĐÁ.html"
+                        class="hover:text-amber-400 hover:no-underline">CÁ CƯỢC
+                        BÓNG ĐÁ</a></li>
+                <li class=""><a href="../components/NỔ-HŨ-ĐỔI-THƯỞNG.html"
+                        class="hover:text-amber-400 hover:no-underline">NỔ HŨ ĐỔI
+                        THƯỞNG</a></li>
+                <li class=""><a href="../components/LÔ-ĐỀ-ONLINE.html"
+                        class="hover:text-amber-400 hover:no-underline">LÔ ĐỀ
+                        ONLINE</a></li>
+                <li class=""><a href="../components/GAME-BẮN-CÁ.html"
+                        class="hover:text-amber-400 hover:no-underline">GAME BẮN
+                        CÁ</a></li>
+                <li class=""><a href="../components/THỂ-THAO-ĐIỆN-TỬ.html"
+                        class="hover:text-amber-400 hover:no-underline">THỂ THAO
+                        ĐIỆN TỬ</a></li>
+            </ul>
+        </nav>
+
+
+        <!--menu-->
+
+        <div class="bg-blue-950 md:hidden">
+            <div class="container">
+                <!-- button container -->
+                <div class="relative py-2 justify-center flex items-center">
+                    <nav x-data="{ open: false }" class="w-full">
+                        <div class="flex justify-center">
+                            <button class="text-gray-100 w-10 h-10 relative focus:outline-none" @click="open = !open">
+                                <div class="menu-icon block w-5 absolute ">
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'rotate-45': open, '-translate-y-1.5': !open }"></span>
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'opacity-0': open } "></span>
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'-rotate-45': open, 'translate-y-1.5': !open}"></span>
+                                </div>
+                            </button>
+                            <span class="text-white uppercase mt-2 items-center justify-center">menu</span>
+                        </div>
+                        <!-- List container -->
+                        <ul x-show="open" class=" text-white mt-2 *:py-2 space-y-2  *:font-medium">
+                            <li class=""><a href="../components/index.html"
+                                    class="hover:text-amber-400 hover:no-underline active:text-amber-400">188DONG</a>
+                            </li>
+
+                            <li class=""><a href="../components/CASINO-TRỰC-TUYẾN.html"
+                                    class="hover:text-amber-400 hover:no-underline">CASINO
+                                    TRỰC TUYẾN</a></li>
+                            <li class=""><a href="../components/CÁ CƯỢC-BÓNG-ĐÁ.html"
+                                    class="hover:text-amber-400 hover:no-underline">CÁ CƯỢC
+                                    BÓNG ĐÁ</a></li>
+                            <li class=""><a href="../components/NỔ-HŨ-ĐỔI-THƯỞNG.html"
+                                    class="hover:text-amber-400 hover:no-underline">NỔ HŨ ĐỔI
+                                    THƯỞNG</a></li>
+                            <li class=""><a href="../components/LÔ-ĐỀ-ONLINE.html"
+                                    class="hover:text-amber-400 hover:no-underline">LÔ ĐỀ
+                                    ONLINE</a></li>
+                            <li class=""><a href="../components/GAME-BẮN-CÁ.html"
+                                    class="hover:text-amber-400 hover:no-underline">GAME BẮN
+                                    CÁ</a></li>
+                            <li class=""><a href="../components/THỂ-THAO-ĐIỆN-TỬ.html"
+                                    class="hover:text-amber-400 hover:no-underline">THỂ THAO
+                                    ĐIỆN TỬ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- End button container -->
+
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <section class="bg-white ">
+        <div class="container">
+
+            <div class=" text-black p-2">
+                <div class="border shadow-md p-2 col-span-2 ">
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Hướng Dẫn</h1>
+                        <p class="mt-6">Hướng dẫn cách chơi tại HL8, chuyên trang giải trí, game đổi thưởng, bắn cá, tài xỉu, đặt cược, xổ số. Bài viết tham khảo dành cho thành viên mới tham gia HL8 lần đầu.</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/3.png" alt="">
+                    </div>
+                   
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Caishen Wins HL8 – Quay Hũ Thần Tài Thắng Đậm</h1>
+                        <p class="mt-2">19/12/2023 Bởi hl8viet</p>
+                    </div>
+                    <div class="p-2">
+                        <p class="mt-6">Hôm nay HL8 sẽ giới thiệu trò chơi slot trực tuyến Caishen Wins của nhà phát hành PG Soft một cách chi tiết giúp anh em có thể hiểu hơn về chủ đề và lối chơi của game này. Các phong tục và lễ hội của người Trung Quốc đều rất độc đáo và phong … Đọc tiếp</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/7.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Ganesha Fortune – Quay Hũ Chủ Đề Thần Thoại Ấn Độ</h1>
+                        <p class="mt-2">22/11/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Quay hũ là một trong những trò chơi cá cược trực tuyến đang thu hút được khá nhiều người chơi trên toàn thế giới, điểm mạnh của các trò quay hũ là với số vốn nhỏ bạn có thể săn được hũ to, số nhân lên đến x10, x50 thậm chí đối với trò quay … Đọc tiếp</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/10.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Sổ Mơ Lô Đề & Bí Quyết May Mắn Thắng Giải</h1>
+                        <p class="mt-2">18/10/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Mỗi giấc mơ đều mang một ý nghĩa khơi gợi sự tò mò của nhiều người, và sổ mơ lô đề phổ biến khiến người nằm mơ phải đắn đo tìm câu trả lời.</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/5.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Khám phá Bạch Thủ Lô Hôm Nay & Cách Chinh Phục</h1>
+                        <p class="mt-2">14/10/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Đối với những người đam mê cá cược xổ số dày dạn kinh nghiệm, khái niệm bạch thủ lô hôm nay đã không còn gì mới mẻ và luôn được áp dụng</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/8.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Giải Thích Chi Tiết Song Thủ Lô Là Gì</h1>
+                        <p class="mt-2">11/10/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Cá cược lô đề hiện đại có rất nhiều phương pháp khác nhau, trong đó song thủ lô là một trong những lựa chọn được người chơi ưa chuộng nhất.</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/6.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Góc Giải Đáp Tân Thủ: Dàn Đề 3 Miền Là Gì?</h1>
+                        <p class="mt-2">08/10/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Bạn đang thắc mắc Dàn Đề là gì trong bối cảnh xổ số và cờ bạc? Bài viết dưới đây sẽ cung cấp cho bạn lời giải thích toàn diện về dàn đề bất tử.</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/9.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Luật Chơi Lô Đề Miền Bắc Và Những Điều Cần Biết</h1>
+                        <p class="mt-2">06/10/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Để tăng cơ hội trúng các giải thưởng lớn, điều quan trọng là người chơi phải nắm vững luật chơi lô đề miền Bắc dù bạn là người chơi mới hay cũ.</p>
+                    </div> 
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/4.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Lô Đề Trực Tuyến Và Xổ Số Truyền Thống Khác Biệt Thế Nào?</h1>
+                        <p class="mt-2">03/10/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Trong thời đại ngày nay, những người chơi cờ bạc đều có thể đã quen thuộc với các phương pháp chơi lô đề trực tuyến và xổ số truyền thống..</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/2.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Cá Cược Bóng Đá Có Tính Bù Giờ Không? Những Điểm Mấu Chốt Cần Biết</h1>
+                        <p class="mt-2">30/09/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Một câu hỏi cấp bách thường xuất hiện là liệu cá cược bóng đá có tính bù giờ không. Hãy cùng đi sâu vào vấn đề này qua bài viết sau..</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/1.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] md:text-3xl">Bí Kíp Nắm Vững Tỷ Lệ Kèo Malaysia Từ Chuyên Gia – HL8 VN</h1>
+                        <p class="mt-2">24/09/2023 Bởi hl8viet</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-6">Nếu bạn bị hấp dẫn bởi tỷ lệ kèo Malaysia nhưng vẫn chưa tìm được nguồn tài nguyên nào cung cấp thông tin chi tiết có giá trị thì HL8 sẽ giúp bạn.</p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
+
+
+
+        </div>
+    </section>
+
+
+    <!-- body text -->
+
+
+
+    <footer class="">
+        <div class="bg-sky-900">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-white p-2">
+                    <div class="*:p-2 border-l-2 border-r-2 border-dotted border-gray-400">
+                        <img src="../images/photo_2024-06-11_12-00-54.png" alt="" class="w-[80px]">
+                        <p>HL8 Việt Nam xin trân trọng cảm ơn sự đồng hành của quý khách! Tại trang chủ đăng ký và đăng
+                            nhập
+                            HL8, quý khách có thể sử dụng link mới nhất, đảm bảo an toàn tài khoản. Bên cạnh đó, đội ngũ
+                            chuyên
+                            viên luôn sẵn sàng hỗ trợ qua kênh chat trực tuyến tại đây.</p>
+                    </div>
+                    <div class="*:p-2 border-l-2 border-r-2 border-dotted border-gray-400 text-white">
+                        <h1 class="font-medium text-amber-500">TRANG THÔNG TIN</h1>
+                        <div class="flex flex-col *:mt-2">
+                            <a href="../views/Giới-Thiệu.html" class="hover:text-amber-500 hover:underline">Giới
+                                Thiệu</a>
+
+                            <a href="../views/../components/index.html"
+                                class="hover:text-amber-500 hover:underline">Điều
+                                Khoản Sử Dụng</a>
+                            <a href="../components/index.html" class="hover:text-amber-500 hover:underline">Chính Sách
+                                Bảo Mật</a>
+                            <a href="../views/Đại-Lý.html" class="hover:text-amber-500 hover:underline">Đại Lý</a>
+                            <a href="../views/Hướng-Dẫn.html" class="hover:text-amber-500 hover:underline">Hướng Dẫn</a>
+                            <a href="../views/Sự-Kiện-HL8.html" class="hover:text-amber-500 hover:underline">Sự Kiện
+                                HL8</a>
+                        </div>
+                    </div>
+                    <div class="*:p-2 border-l-2 border-r-2 border-dotted border-gray-400 text-white">
+                        <h1 class="font-medium text-amber-500">TRANG HƯỚNG DẪN</h1>
+                        <div class="flex flex-col *:mt-2">
+                            <a href="../views/cach-nap-tien-tai-khoan-hl8.html"
+                                class="hover:text-amber-500 hover:underline">Hướng Dẫn Nạp Tiền Tài Khoản HL8</a>
+                            <a href="../views/cach-nap-tien-tai-khoan-hl8.html"
+                                class="hover:text-amber-500 hover:underline">Hướng Dẫn Cách Rút Tiền Từ HL8</a>
+                            <a href="" class="hover:text-amber-500 hover:underline">Hướng Dẫn Đăng Ký Tài Khoản Nhà
+                                Cái</a>
+                            <img src="../images/dmca_protected_sml_120l.png" alt="" class="w-24 mt-4">
+                        </div>
+                    </div>
+                    <div class="*:p-2 border-l-2  border-r-2 border-dotted border-gray-400 text-white">
+                        <h1 class="font-medium text-amber-500">NHÀ CUNG CẤP</h1>
+                        <div class="flex flex-col *:mt-2">
+                            <img src="../images/footer-provider.webp" alt="">
+                        </div>
+                        <p>Đơn vị tiền tệ được chấp nhận</p>
+                        <img src="../images/currency.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="justify-center flex bg-slate-300 p-2">
+            <div class="container">
+                <p class="text-center text-[14px]">© 2024 HL8 Việt Nam - Trang chủ chính thức hỗ trợ đăng nhập, đăng ký
+                    tài khoản mới. Vui lòng tham khảo
+                    trang điều khoản sử dụng và đảm bảo tài khoản chỉ dành cho người trên 18+.
+                    All copyrights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

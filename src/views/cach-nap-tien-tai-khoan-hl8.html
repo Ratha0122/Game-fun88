@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwindcss... -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <!-- tailwindcss... -->
+    <link href="../output.css" rel="stylesheet">
+
+
+    <!-- bootstrap...! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- bootstrap...! -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+
+    <!-- font awesome...! -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- images icon -->
+    <link rel="shortcut icon" href="../images/photo_2024-06-11_12-00-54.png" type="image/x-icon">
+
+
+
+    <!--- carousel script-->
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.0/dist/alpine.min.js" defer></script>
+
+    <title>188DONG.At - Trang chủ chính thức nhà cái HL8 Việt</title>
+
+
+
+</head>
+
+<body>
+
+    <!--sign-->
+
+    <header id="navbar" class=" header bg-white">
+        <div class="bg-cyan-500">
+            <div class="container ">
+                <div class="block justify-between md:flex">
+                    <a href="./index.html" class="flex justify-center items-center p-2">
+                        <img src="../images/photo_2024-06-11_12-00-54.png" alt="" class="max-w-[80px]">
+                    </a>
+                    <ul
+                        class="flex justify-center items-center p-4 *:cursor-pointer *:font-medium *:px-5 *:py-1 *:m-2 *:rounded-lg">
+                        <li class="bg-amber-500 hover:shadow-md"><a href=" https://www.hay88.one/?" class="">ĐĂNG
+                                NHẬP</a></li>
+                        <li class="bg-red-600 "><a href=" https://www.hay88.one/?"
+                                class="text-white hover:text-black">ĐĂNG KÝ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigation screen -->
+        <nav class="bg-blue-900 hidden md:block items-centerw-full py-2">
+            <div class="container "></div>
+            <ul class="flex justify-center flex-wrap p-4 *:font-medium *:px-4 *:py-2 *:text-white *:cursor-pointer">
+                <li class=""><a href="../components/index.html"
+                        class="hover:text-amber-400 hover:no-underline active:text-amber-400">188DONG</a></li>
+
+                <li class=""><a href="../components/CASINO-TRỰC-TUYẾN.html"
+                        class="hover:text-amber-400 hover:no-underline">CASINO
+                        TRỰC TUYẾN</a></li>
+                <li class=""><a href="../components/CÁ CƯỢC-BÓNG-ĐÁ.html"
+                        class="hover:text-amber-400 hover:no-underline">CÁ CƯỢC
+                        BÓNG ĐÁ</a></li>
+                <li class=""><a href="../components/NỔ-HŨ-ĐỔI-THƯỞNG.html"
+                        class="hover:text-amber-400 hover:no-underline">NỔ HŨ ĐỔI
+                        THƯỞNG</a></li>
+                <li class=""><a href="../components/LÔ-ĐỀ-ONLINE.html"
+                        class="hover:text-amber-400 hover:no-underline">LÔ ĐỀ
+                        ONLINE</a></li>
+                <li class=""><a href="../components/GAME-BẮN-CÁ.html"
+                        class="hover:text-amber-400 hover:no-underline">GAME BẮN
+                        CÁ</a></li>
+                <li class=""><a href="../components/THỂ-THAO-ĐIỆN-TỬ.html"
+                        class="hover:text-amber-400 hover:no-underline">THỂ THAO
+                        ĐIỆN TỬ</a></li>
+            </ul>
+        </nav>
+
+
+        <!--menu-->
+
+        <div class="bg-blue-950 md:hidden">
+            <div class="container">
+                <!-- button container -->
+                <div class="relative py-2 justify-center flex items-center">
+                    <nav x-data="{ open: false }" class="w-full">
+                        <div class="flex justify-center">
+                            <button class="text-gray-100 w-10 h-10 relative focus:outline-none" @click="open = !open">
+                                <div class="menu-icon block w-5 absolute ">
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'rotate-45': open, '-translate-y-1.5': !open }"></span>
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'opacity-0': open } "></span>
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'-rotate-45': open, 'translate-y-1.5': !open}"></span>
+                                </div>
+                            </button>
+                            <span class="text-white uppercase mt-2 items-center justify-center">menu</span>
+                        </div>
+                        <!-- List container -->
+                        <ul x-show="open" class=" text-white mt-2 *:py-2 space-y-2  *:font-medium">
+                            <li class=""><a href="../components/index.html"
+                                    class="hover:text-amber-400 hover:no-underline active:text-amber-400">188DONG</a>
+                            </li>
+
+                            <li class=""><a href="../components/CASINO-TRỰC-TUYẾN.html"
+                                    class="hover:text-amber-400 hover:no-underline">CASINO
+                                    TRỰC TUYẾN</a></li>
+                            <li class=""><a href="../components/CÁ CƯỢC-BÓNG-ĐÁ.html"
+                                    class="hover:text-amber-400 hover:no-underline">CÁ CƯỢC
+                                    BÓNG ĐÁ</a></li>
+                            <li class=""><a href="../components/NỔ-HŨ-ĐỔI-THƯỞNG.html"
+                                    class="hover:text-amber-400 hover:no-underline">NỔ HŨ ĐỔI
+                                    THƯỞNG</a></li>
+                            <li class=""><a href="../components/LÔ-ĐỀ-ONLINE.html"
+                                    class="hover:text-amber-400 hover:no-underline">LÔ ĐỀ
+                                    ONLINE</a></li>
+                            <li class=""><a href="../components/GAME-BẮN-CÁ.html"
+                                    class="hover:text-amber-400 hover:no-underline">GAME BẮN
+                                    CÁ</a></li>
+                            <li class=""><a href="../components/THỂ-THAO-ĐIỆN-TỬ.html"
+                                    class="hover:text-amber-400 hover:no-underline">THỂ THAO
+                                    ĐIỆN TỬ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- End button container -->
+
+            </div>
+        </div>
+
+
+
+    </header>
+
+    <section class="bg-white ">
+        <div class="container">
+
+            <div class=" text-black p-2">
+                <div class="border shadow-md p-2 col-span-2 ">
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-3xl">Hướng dẫn cách nạp tiền tài khoản nhà cái HL8</h1>
+                        <p class="mt-2">14/11/2022 Bởi hl8viet</p>
+                    </div>
+                    <div class="p-2">
+                        <p class="mt-6">Hiện nhà cái HL8 cung cấp rất nhiều cách nạp tiền chơi game để người chơi có thể thỏa mái lựa chọn theo nhu cầu. Chúng ta hãy cùng nhau tìm hiểu về từng cách nạp tiền xem quy trình diễn ra như thế nào. Đâu là ưu nhược điểm của từng phương thức nạp tiền tại nhà cái này.</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/cach-nap-tai-khoan-hl8.webp" alt="">
+                    </div>
+                   
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-3xl">Nạp tiền chơi game HL8 có an toàn không?</h1>
+                        <p class="mt-4">Nạp rút tiền là yếu tố mà người chơi quan tâm nhất đối với các nhà cái hiện nay. Thấu hiểu được điều đó HL8 mang đến cho người chơi sự yên tâm tuyệt đối bởi thao tác nạp rút tiền vô cùng đơn giản, an toàn và tin cậy. Bên cạnh đó nhà cái cũng liên kết với rất nhiều ngân hàng để người chơi thuận lợi khi giao dịch.</p>
+                        <p class="mt-4">Nhà cái thanh toán tiền thắng cho người tham gia khá sòng phẳng. Khi thắng có thể rút tiền ra nhanh chóng và dễ dàng. Chỉ cần sở hữu tài khoản tại nhà cái thì bạn có thể thực hiện việc nạp và rút tiền bất cứ lúc nào. Bạn chỉ mất khoảng 1 đến 5 phút để nạp tiền và khoảng 10 đến 12 phút rút tiền.</p>
+                        <p class="mt-4">Nhân viên của nhà cái HL8 Việt Nam cũng trực 24/7 sẵn sàng hỗ trợ cho bạn bất cứ lúc nào. Điều này giúp cho HL8 ngày càng thu hút đông đảo người chơi mới hơn.</p>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-3xl">Cách phương thức giao dịch nạp tiền tại HL8 Việt Nam</h1>
+                       
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/phuong-thuc-giao-dich-hl8.webp" alt="">
+                    </div>
+                    <div class="p-2">
+                        <p class="mt-4">HL8 được cấp phép hoạt động kinh doanh bởi Tập đoàn PAGCOR, trụ sở chính tại Philippines. Nhà cái xuất hiện từ năm 2010, với hơn chục năm kinh nghiệm trong ngành. Nhờ tiềm lực kinh tế ổn định đã giúp HL8 ngày càng phát triển và mở rộng hoạt động khắp Châu Á. HL8 là cái tên được nhiều người yêu thích lựa chọn.</p>
+                        <p class="mt-4">HL8 là nhà cái hiếm hoi hỗ trợ người chơi tối đa nhiều hình thức nạp tiền. Trong đó có các hình thức như chuyển khoản ngân hàng, Mpay, Mpay QR, Thẻ cào, Fpay, Zpay v.v…</p>
+                        <p class="mt-4">Để tạo sự thuận tiện và dễ dàng khi làm các giao dịch nạp tiền. HL8 liên kết với nhiều ngân hàng lớn trong nước, như BIDV, Agribank, Vietcombank, Techcombank v.v…</p>
+                    </div>
+
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-2xl">Khuyến mãi khi nạp tiền tại nhà cái HL8</h1>
+                        <p class="mt-4">Cập nhật những khuyến mãi tặng thưởng khi người chơi nạp tiền tài khoản tại HL8. Đầy đủ chương trình tặng tiền cược miễn phí dành cho người mới nạp lần đầu và cả thành viên cấp bậc cao.</p>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-2xl">Sự kiện chào mừng tặng 200% lên tới 3 triệu đồng</h1>
+                        <p class="mt-4">Đối với những thành viên đăng ký lần đầu tại HL8, đây là chương trình cực kỳ hot giúp bạn có thêm nguồn vốn. Chương trình áp dụng một lần duy nhất cho các sản phẩm Thể thao, Casino trực tuyến, Slot Games, Trò chơi.</p>
+                        <p class="mt-4">Ưu đãi áp dụng đối với gười chơi nạp tối thiểu 200.000 đồng lần đầu tiên. Đồng thời, quý khách phải đảm bảo số vòng cược theo quy định của nhà cái cho từng sản phẩm cược.</p>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-2xl">Thưởng 50% cho lần nạp tiền thứ ba</h1>
+                        <p class="mt-4">Trong quá trình chơi, hội viên vẫn được nhận các gói khuyến mãi xuyên suốt. Vào lần nạp thứ ba, người chơi cũng nhận được thưởng 50%. Mức thưởng tối đa lên tới 1 triệu đồng.</p>
+                        <p class="mt-4">Để nhận thưởng, bạn cũng cần nạp tiền thành công tối thiểu 200.000 đồng. Tiền thưởng sẽ được chuyển vào tài khoản cá cược sau khi nạp thành công. Tuy nhiên, để rút tiền, người chơi phải đảm bảo số vòng cược thành công theo quy định.</p>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-2xl">Thưởng 100% cho lần nạp tiền thứ 5</h1>
+                        <p class="mt-4">Không dừng lại ở đó, HL8 còn triển khai thưởng lớn cho lần nạp thứ 5 của bạn. Và lần này quý khách sẽ được tặng 100% tiền nạp trong lần thứ 5. Tương tự như lần nạp tiền đầu tiên và thứ ba. Người chơi cần nạp tối thiểu 200.000 đồng và tham gia đủ số vòng cược quy định của sảnh.</p>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-2xl">Cách nạp tiền chơi game HL8 đơn giản</h1>
+                        <p class="mt-4">Mời các bạn cùng tìm hiểu chi tiết cách nạp tiền vào tài khoản và quy trình thực hiện để nạp thành công.</p>
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/nap-tien-hl8-bang-momo.webp" alt="">
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-xl">Cách nạp tiền HL8 bằng hình thức Chuyển khoản ngân hàng</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập vào trang chủ, chọn mục Gửi tiền và chọn tiếp Ngân hàng</li>
+                        <li>Điền đầy đủ thông tin số tiền gửi, ngân hàng v.v…</li>
+                        <li>Thực hiện giao dịch bằng cách chọn hình thức gửi tiền qua Internet Banking/ATM/quầy giao dịch.</li>
+                        <li>Xác nhận lại thông tin và chọn Gửi tiền.</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Nạp tiền chơi game qua ví Mpay</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập vào trang chủ, chọn mục Gửi tiền, chọn Mpay.</li>
+                        <li>Điền thông tin nạp tiền theo yêu cầu</li>
+                        <li>Xác nhận lại thông tin, chọn Gửi tiền..</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Gửi tiền qua 5S MoMo</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập vào trang chủ, chọn Gửi tiền và nhấn chọn 5S MoMo.</li>
+                        <li>Điền đầy đủ thông tin và nhấn chọn Gửi tiền.</li>
+                        <li>Xác nhận lại thông tin và chờ xác nhận chuyển tiền vào tài khoản.</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Nạp tiền HL8 qua Help2pay</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập vào trang chủ, chọn mục Gửi tiền và nhấn chọn Help2pay.</li>
+                        <li>Điền đầy đủ mọi thông tin và chọn Gửi tiền.</li>
+                        <li>Đăng nhập Internet Banking, nhập mã ủy quyền để thực hiện giao dịch.</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Cách nạp tiền thông qua Mpay QR</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập vào trang chủ, chọn mục Gửi tiền và chọn tiếp Mpay QR.</li>
+                        <li>Điền số tiền cần gửi, chọn Gửi tiền.</li>
+                        <li>Chọn mục thanh toán bằng mã QR để quét mã giao dịch.</li>
+                        <li>Xác nhận mã OTP.</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Gửi tiền qua 1ClickPay</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập trang chủ, chọn mục Gửi tiền và chọn 1Clickpay.</li>
+                        <li>Điền số tiền cần nạp, chọn ngân hàng,chọn gửi tiền.</li>
+                        <li>Đăng nhập Internet Banking và nhập mã ủy quyền để hệ thống giao dịch..</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Dùng thẻ cào điện thoại</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập trang chủ, chọn mục Gửi tiền và nhấn chọn Thẻ cào 5s.</li>
+                        <li>Điền thông tin yêu cầu và nhấn chọn Gửi tiền.</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Sử dụng Fpay</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập trang chủ, chọn mục Gửi tiền và nhấn chọn Fpay.</li>
+                        <li>Nhập số tiền cần nạp và ngân hàng, nhấn chọn Gửi tiền.</li>
+                        <li>Đăng nhập Internet Banking để xác minh mã OTP để hoàn tất.</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Cách nạp tiền Bằng Zpay</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập trang chủ, chọn mục Gửi tiền và chọn tiếp Zpay.</li>
+                        <li>Chọn Thanh toán Zpay để nhận được thông tin chuyển khoản.</li>
+                        <li>Điền đầy đủ thông tin chuyển khoản với số tiền cần nạp.</li>
+                        <li>Xác nhận lại thông tin và chọn Gửi tiền.</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-xl">Cách nạp tiền HL8 qua E QRCODE</h1>
+                       
+                    </div>
+                    <div class="list-disc p-2">
+                        <li>Truy cập trang chủ, chọn mục Gửi tiền và chọn E QRCODE.</li>
+                        <li>Nhập số tiền cần nạp, ngân hàng, nhấn chọn Gửi tiền.</li>
+                        <li>Điền chính xác thông tin trong mục thanh toán mã QR và quét.</li>
+                        <li>Xác nhận mã OTP.</li>
+                    </div>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-3xl">HL8 hỗ trợ tiền điện tử USDT</h1>
+                       
+                    </div>
+                    <div class="mt-10 flex justify-center items-center">
+                        <img src="../images/usdt-nap-tien-hl8.webp" alt="">
+                    </div> 
+                    <p class="mt-4">Nằm bắt xung hướng, HL8 đã cập nhật phương thức thanh toán hiện đại và ẩn danh. Đó chính là ví tiền điện tử USDT hỗ trợ trực tiếp trên trang. Chỉ cần bạn có sử dụng tiền điện tử, quy đổi USDT và sử dụng chuỗi khối phù hợp là có thể thực hiện giao dịch nhanh chóng.</p>
+                    <div class="p-2">
+                        <h1 class="text-[18px] font-bold md:text-3xl">Những lưu ý khi nạp tiền chơi game tại cổng game HL8</h1>
+                        <p class="mt-4">Hạn mức nạp tiền chơi game tại HL8 từ 50.000 – 100.000.000 vnd/ 1 lần. Nhà cái không giới hạn số lần nạp thực hiện trong ngày. Tốc độ giao dịch chỉ từ 5 -15 phút là có thể nạp tiền thành công vào tài khoản.</p>
+                    </div>
+
+                    <div class="p-2">
+                        <p class="mt-4">Khi đăng ký làm thành viên của nhà cái, người chơi phải điền các thông tin tài ngân hàng hay ví điện tử cẩn thận và chính xác. Để được hỗ trợ nhanh hơn, quý khách nên điền HỌ và TÊN đầy đủ ở nội dung giao dịch và chụp lại biên lai gửi tiền thành công khi nạp vào tài khoản.</p>
+                        <p class="mt-4">Nếu dùng thẻ cào 5s để gửi tiền thì người chơi sẽ chịu phí: Viettel 22%, Mobifone 25%, Vinaphone 25%, Zing 20%, Gate 30%, Vietnamobile 20%. Nhập quá 5 lần mã pin hoặc serial thẻ cào không chính xác thì nên liên hệ CSKH để được hướng dẫn.</p>
+                    </div>
+
+                    
+                </div>
+                
+                </div>
+            </div>
+        </div>
+
+
+
+
+        </div>
+    </section>
+
+
+    <!-- body text -->
+
+
+
+    <footer class="">
+        <div class="bg-sky-900">
+            <div class="container">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-white p-2">
+                    <div class="*:p-2 border-l-2 border-r-2 border-dotted border-gray-400">
+                        <img src="" alt="">
+                        <p>HL8 Việt Nam xin trân trọng cảm ơn sự đồng hành của quý khách! Tại trang chủ đăng ký và đăng
+                            nhập
+                            HL8, quý khách có thể sử dụng link mới nhất, đảm bảo an toàn tài khoản. Bên cạnh đó, đội ngũ
+                            chuyên
+                            viên luôn sẵn sàng hỗ trợ qua kênh chat trực tuyến tại đây.</p>
+                    </div>
+                    <div class="*:p-2 border-l-2 border-r-2 border-dotted border-gray-400 text-white">
+                        <h1 class="font-medium text-amber-500">TRANG THÔNG TIN</h1>
+                        <div class="flex flex-col *:mt-2">
+                            <a href="../views/Giới-Thiệu.html" class="hover:text-amber-500 hover:underline">Giới
+                                Thiệu</a>
+                            
+                            <a href="../views/../components/index.html" class="hover:text-amber-500 hover:underline">Điều
+                                Khoản Sử Dụng</a>
+                            <a href="../components/index.html"
+                                class="hover:text-amber-500 hover:underline">Chính Sách Bảo Mật</a>
+                            <a href="../views/Đại-Lý.html" class="hover:text-amber-500 hover:underline">Đại Lý</a>
+                            <a href="../views/Hướng-Dẫn.html" class="hover:text-amber-500 hover:underline">Hướng Dẫn</a>
+                            <a href="../views/Sự-Kiện-HL8.html" class="hover:text-amber-500 hover:underline">Sự Kiện
+                                HL8</a>
+                        </div>
+                    </div>
+                    <div class="*:p-2 border-l-2 border-r-2 border-dotted border-gray-400 text-white">
+                        <h1 class="font-medium text-amber-500">TRANG HƯỚNG DẪN</h1>
+                        <div class="flex flex-col *:mt-2">
+                            <a href="../views/cach-nap-tien-tai-khoan-hl8.html" class="hover:text-amber-500 hover:underline">Hướng Dẫn Nạp Tiền Tài Khoản HL8</a>
+                            <a href="../views/cach-nap-tien-tai-khoan-hl8.html" class="hover:text-amber-500 hover:underline">Hướng Dẫn Cách Rút Tiền Từ HL8</a>
+                            <a href="../views/cach-tao-tai-khoan-trang-hl8.html" class="hover:text-amber-500 hover:underline">Hướng Dẫn Đăng Ký Tài Khoản Nhà
+                                Cái</a>
+                            <img src="../images/dmca_protected_sml_120l.png" alt="" class="w-24 mt-4">
+                        </div>
+                    </div>
+                    <div class="*:p-2 border-l-2  border-r-2 border-dotted border-gray-400 text-white">
+                        <h1 class="font-medium text-amber-500">NHÀ CUNG CẤP</h1>
+                        <div class="flex flex-col *:mt-2">
+                            <img src="../images/footer-provider.webp" alt="">
+                        </div>
+                        <p>Đơn vị tiền tệ được chấp nhận</p>
+                        <img src="../images/currency.webp" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="justify-center flex bg-slate-300 p-2">
+            <div class="container">
+                <p class="text-center text-[14px]">© 2024 HL8 Việt Nam - Trang chủ chính thức hỗ trợ đăng nhập, đăng ký
+                    tài khoản mới. Vui lòng tham khảo
+                    trang điều khoản sử dụng và đảm bảo tài khoản chỉ dành cho người trên 18+.
+                    All copyrights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
